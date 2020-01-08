@@ -7,7 +7,7 @@ const {TOKEN} = require('./secret');
 const bot = new commando.Client({
     commandPrefix: '&',
     
-    owner: '198230389423210497',
+    owner: '476423919893479434',
 
     disableEveryone: true
 });

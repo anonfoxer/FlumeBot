@@ -15,25 +15,26 @@ class setyourself extends commando.Command {
         message.channel.send("Hi there! Im Flume, developed by anonfoxer#8098!");
         message.channel.send("I am going to set myself up now! This may take a few minutes depending on my connection!");
 
-        
+        const guild = message.guild;
         
         guild.createChannel('flume-logs', { type: 'text' })
             .then(console.log)
             .catch(console.error);
 
 
-        let mutreole = member.guild.roles.find('name', 'muted');
+        //const mutreole = guild.roles.find('name', 'muted');
         
-        if(!muterole) {
+        //if(!muterole) {
             guild.createRole({
             name: "muted",
             color: "#000000",
-            permissions:[]    
-        })
+            permissions:[]    })
+        //})
         
-        .then(console.log)
-        .catch(console.error);
-        }
+                 .then(console.log)
+                .catch(console.error)
+
+            message.channel.send("Setup Complete!");
     }
 
 

@@ -6,7 +6,7 @@ import TOKEN from "./secret.js"
 //let cdseconds = 20;
 const bot = new commando.Client({
     commandPrefix: '&',
-
+    
     owner: '198230389423210497',
 
     disableEveryone: true

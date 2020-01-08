@@ -1,6 +1,6 @@
 const Discord = require('discord.js'); //create client
 const commando = require('discord.js-commando');
-import TOKEN from "./secret.js"
+const {TOKEN} = require('./secret');
 //const bot = new Discord.Client();
 //let cooldown = new.Set();
 //let cdseconds = 20;
@@ -15,10 +15,10 @@ const bot = new commando.Client({
 bot.on('ready', ( ) => {
     bot.user.setActivity('&help')
     console.log('Flume is Online')
-    message.channel.send('Raidmode is OFF by default.')
+    //message.channel.send('Raidmode is OFF by default.')
 })
 
-let raidmode = off;
+let raidmode = 0;
 
 bot.on('guildMemberAdd', member => {
     console.log("User " + member.user.username + " Joined!"); //announce new member to the server.

@@ -12,3 +12,6 @@ Also an excuse for me to learn how to use git right.
 - Kick/Ban
 - Voice Channel Control
 - Get running on a fucking RPi3B+
+
+# Add Bot to a server
+[Invite Link](https://discordapp.com/oauth2/authorize?client_id=662760640242384904&scope=bot&permissions=2146958591)

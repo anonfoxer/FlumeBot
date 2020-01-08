@@ -11,9 +11,9 @@ class informSetup extends commando.Command {
     }
 
     async run(message, args) {
-        message.channel.send("Hi there! Im Flume, developed by anonfoxer#8098!");
-        message.channel.send("Please make sure I have the following permissions:\n\n-Admin Privs\n-Manage Roles\n-Kick & Ban Members\n-Manage Messages\nCreate Channels")
-        message.channel.send("If I have all of these permissions, then run the setup command!");
+        message.channel.send(":wrench: Hi there! Im Flume, developed by anonfoxer#8098!");
+        message.channel.send(":wrench: Please make sure I have the following permissions:\n\n:wrench: -Admin Privs\n:wrench: -Manage Roles\n:wrench: -Kick & Ban Members\n:wrench: -Manage Messages\n:wrench: Create Channels")
+        message.channel.send(":wrench: If I have all of these permissions, then run the setup command!");
         }
 
 }

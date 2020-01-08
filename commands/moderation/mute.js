@@ -21,9 +21,10 @@ class mute extends commando.Command {
                     ADD_REACTIONS: false,
                 });
             });
-            if(member.hasPermission("MANAGE_MESSAGES")) return message.reply("You cannot mute that user!");
-            if(!perp.hasPermission("ADMINISTRATOR")) return message.reply("You don't have permission!");
+            if(member.hasPermission("MANAGE_MESSAGES")) return message.reply(":exclamation: You cannot mute that user!");
+            if(!perp.hasPermission("ADMINISTRATOR")) return message.reply(":exclamation: You don't have permission!");
             member.addRole(role);//Add this role as var role
+            message.channel.sendMessage(':nazar_amulet: ' + member + ' was muted! ');
         }
         catch(e) {
             console.log(e.stack);

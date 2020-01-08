@@ -1,13 +1,14 @@
 const Discord = require('discord.js'); //create client
 const commando = require('discord.js-commando');
 const {TOKEN} = require('./secret');
+const {OWNER} = require('./secret2');
 //const bot = new Discord.Client();
 //let cooldown = new.Set();
 //let cdseconds = 20;
 const bot = new commando.Client({
     commandPrefix: '&',
     
-    owner: '476423919893479434',
+    owner: OWNER,
 
     disableEveryone: true
 });

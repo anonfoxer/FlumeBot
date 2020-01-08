@@ -11,17 +11,15 @@ class setyourself extends commando.Command {
     }
 
     async run(message, args) {
-        message.delete();
-        message.channel.send("Hi there! Im Flume, developed by anonfoxer#8098!");
-        message.channel.send("I am going to set myself up now! This may take a few minutes depending on my connection!");
-
         const guild = message.guild;
+        message.delete();
+        message.channel.send(":wrench: Hi there! Im Flume, developed by anonfoxer#8098!");
+        message.channel.send(":wrench: I am going to set myself up now! This may take a few minutes depending on my connection!");
+
         
         guild.createChannel('flume-logs', { type: 'text' })
             .then(console.log)
             .catch(console.error);
-
-
         //const mutreole = guild.roles.find('name', 'muted');
         
         //if(!muterole) {
@@ -31,10 +29,10 @@ class setyourself extends commando.Command {
             permissions:[]    })
         //})
         
-                 .then(console.log)
-                .catch(console.error)
+            .then(console.log)
+            .catch(console.error)
 
-            message.channel.send("Setup Complete!");
+            message.channel.send(":wrench: Setup Complete!");
     }
 
 

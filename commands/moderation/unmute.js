@@ -24,6 +24,7 @@ class unmute extends commando.Command {
             if(member.hasPermission("MANAGE_MESSAGES")) return message.reply("You cannot mute that user!");
             if(!perp.hasPermission("ADMINISTRATOR")) return message.reply("You don't have permission!");
             member.removeRole(role);
+            message.channel.sendMessage(':white_check_mark: ' + member + ' was unmuted!');
         }
         catch(e) {
             console.log(e.stack);

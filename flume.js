@@ -2,6 +2,10 @@ const Discord = require('discord.js'); //create client
 const commando = require('discord.js-commando');
 const {TOKEN} = require('./secret');
 const {OWNER} = require('./secret2');
+
+const guild = message.guild; //define the guild
+const loggify = guild.channels.find(channel => channel.name === "flume-logs");
+
 //const bot = new Discord.Client();
 //let cooldown = new.Set();
 //let cdseconds = 20;

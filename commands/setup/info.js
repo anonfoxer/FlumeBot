@@ -1,6 +1,6 @@
 const commando = require('discord.js-commando');
-const guild = message.guild; //define the guild
-const loggify = guild.channels.find(channel => channel.name === "flume-logs");
+//const guild = message.guild; //define the guild
+//const loggify = guild.channels.find(channel => channel.name === "flume-logs");
 
 class informSetup extends commando.Command {
     constructor(client) {

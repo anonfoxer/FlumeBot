@@ -32,7 +32,9 @@ class unmute extends commando.Command {
             console.log(e.stack);
         }
         }
-
+        /* DEV NOTE:
+        peep out jumbots role commands to see if ya can make a simpler version of this. 
+        one you can actually fully follow lmfao */
 }
 
 module.exports = unmute

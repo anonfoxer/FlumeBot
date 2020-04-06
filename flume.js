@@ -2,6 +2,7 @@ const Discord = require('discord.js'); //create client
 const commando = require('discord.js-commando');
 const {TOKEN} = require('./secret');
 const {OWNER} = require('./secret2');
+var fs = require('fs');
 
 //const bot = new Discord.Client();
 //let cooldown = new.Set();
@@ -16,7 +17,7 @@ const bot = new commando.Client({
 
 bot.on('ready', ( ) => {
     bot.user.setActivity('&help')
-    console.log('Flume is Online')
+    console.log("FlumeBot Online!")
     //message.channel.send('Raidmode is OFF by default.')
 })
 
@@ -29,7 +30,7 @@ bot.on('guildMemberAdd', member => {
 
 /* allocate commands */
 registerCommands();
-
+logit();
 /* bot.on('message', (message) =>{ //Raidmode Commands
 
 
@@ -52,6 +53,20 @@ function registerCommands() { //registers all commands. Not neccissarily reserve
     bot.registry.registerGroup('moderation', 'Moderation');
     bot.registry.registerDefaults(); //Registers default commands
     bot.registry.registerCommandsIn(__dirname + "/commands"); //commands found in <dicrec>\commands.
+}
+
+//THE BELOW FUNCTION IS A *GLOBAL LOG!* IF YOU DOWNLOAD THIS LOG YOU ARE LOOKING AT THE BOTS RUN HISTORY FOR ITS UPTIME, ACROSS ALL SERVERS IT IS IN!
+
+function logit(message) {
+    var now = new Date();
+    var message = "FlumeBot Online! Started on: " + Date.now() + "\n";
+    console.log(message);
+    fs.writeFileSync('./devinfo/log.txt', message, err=> {
+        if (err) {
+            console.error(err)
+            return
+        }
+    })
 }
 
 

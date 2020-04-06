@@ -7,6 +7,9 @@ Also an excuse for me to learn how to use git right.
 - npm install discord.js --save
 - npm install discord.js-commando --save
 
+# Other Setup
+- Make sure in the folder "devinfo" there is a file named log.txt
+
 # To Do List
 - Anti Spam Mode ("Raidmode")
 - Kick/Ban

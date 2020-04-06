@@ -16,6 +16,16 @@ class unmute extends commando.Command {
         var role = member.guild.roles.find('name', 'muted');
         var perp = message.author();
         var member = message.mentions.members.first();
+        async function logit(message) {
+            console.log(message);
+            fs.writeFileSync('./devinfo/log.txt', message, err=> {
+                if (err) {
+                    console.error(err)
+                    return
+                }
+            })
+        }
+
         try {
             message.guild.channels.forEach(async (channel, id) => {
                 await channel.overwritePermission(role, {
@@ -30,8 +40,11 @@ class unmute extends commando.Command {
         }
         catch(e) {
             console.log(e.stack);
+            message = e.stack;
+            logit();
         }
         }
+
         /* DEV NOTE:
         peep out jumbots role commands to see if ya can make a simpler version of this. 
         one you can actually fully follow lmfao */

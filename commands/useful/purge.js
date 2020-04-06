@@ -19,6 +19,7 @@ class purge extends commando.Command {
         let cont = message.content.slice(length).split(" ");
         let args = cont.slice(1);*/
         
+        
         async function purge() { //purge function
             message.delete(); //deletes the command message.
 
@@ -28,18 +29,28 @@ class purge extends commando.Command {
             }*/
 
             const fetched = await message.channel.fetchMessages({limit: 100}); //grabs <args> number of messages in channel
-            console.log(':gear: ' + fetched.size + ' messages found, purging.'); //reports deleted messages to console.
+            message = ":gear: " + fetched.size + "messages found, purging. Purge Init by" + message.author; //reports deleted messages to console.
 
             //delete func
             message.channel.bulkDelete(fetched)
             message.channel.sendMessage(`:white_circle: Purged ` + fetched.size + ' messages')
             message.channel.sendMessage(':gear: Purge inititated by ' + message.author);
-            console.log('Purge inititated by ' + message.author); //delete fetched messages
                 /*.catch(error => message.channel.send(`Error: ${error}`)); //If error occurs, type in channel.*/
+        }
+
+        async function logit(message) {
+            console.log(message);
+            fs.writeFileSync('./devinfo/log.txt', message, err=> {
+                if (err) {
+                    console.error(err)
+                    return
+                }
+            })
         }
 
         //purge func call
         purge();
+        logit();
     }
 }
 

@@ -2,3 +2,4 @@ node_modules
 secret.js
 reminder.txt
 secret2.js
+/devinfo/log.txt

@@ -1,0 +1,21 @@
+const commando = require('discord.js-commando');
+
+
+class inform extends commando.Command {
+    constructor(client) {
+        super(client, {
+            name: 'info',
+            group: 'useful',
+            memberName: 'info',
+            description: 'Gives information about the bot!'
+        })
+    }
+
+    async run(message, args) {
+        message.channel.send(":wave: Hi there! Im Flume, developed by anonfoxer#8098!");
+        message.channel.send(":wrench: Please make sure I have the following permissions:\n\n:red_circle: -Admin Privs\n:red_circle: -Manage Roles\n:red_circle: -Kick & Ban Members\n:red_circle: -Manage Messages\n:red_circle: -Create Channels");
+        }
+
+}
+
+module.exports = inform

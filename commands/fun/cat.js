@@ -2,21 +2,21 @@ const commando = require('discord.js-commando');
 //const guild = message.guild; //define the guild
 //const loggify = guild.channels.find(channel => channel.name === "flume-logs");
 
-class tendies extends commando.Command {
+class cat extends commando.Command {
     constructor(client) {
         super(client, {
-            name: 'tendies',
+            name: 'cat',
             group: 'fun',
-            memberName: 'tendies',
-            description: 'Sends Tendies!'
+            memberName: 'cat',
+            description: 'Repeats what you tell it to!'
         })
     }
 
     async run(message, args) {
         message.delete();
-        message.channel.sendMessage('', {files: ["./images/tendies.png"]});
+        message.channel.send(message.content.slice(5, message.content.length));
         }
 
 }
 
-module.exports = tendies
+module.exports = cat

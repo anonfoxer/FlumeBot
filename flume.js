@@ -1,7 +1,5 @@
 const Discord = require('discord.js'); //create client
 const commando = require('discord.js-commando');
-const {TOKEN} = require('./secret');
-const {OWNER} = require('./secret2');
 
 const bot = new commando.Client({
     commandPrefix: '&',
@@ -11,13 +9,10 @@ const bot = new commando.Client({
     disableEveryone: true
 });
 
-/* Flume 2.0 - What's new? 
-- Rewrite of some of the code base.
-- Cleaned up entry (flume.js) 
-- Added kick & ban commands
-- Removed mute & unmute
-- Removed setup commands.
-- Added info command.
+/* Flume 2.1.0 - What's new? 
+- Added some BS to the entry for some stupid jokes
+- Cleaned up code, fixed some bugs.
+- Added try..catch statements for all commands.
 */
 
 bot.on('ready', ( ) => {
@@ -41,6 +36,19 @@ function registerCommands() { //registers all commands. Not neccissarily reserve
     bot.registry.registerDefaults(); //Registers default commands
     bot.registry.registerCommandsIn(__dirname + "/commands"); //commands found in <dicrec>\commands.
 }
+
+/* Stupid fun bs */
+bot.on('message', (message) => { //whenever a message is sent
+    if (message.content.includes(":envolping:")) //checking for an emoji used often. seriously just an in joke.
+    { 
+        try {
+            message.channel.send("indubitably.");
+        }
+        catch {
+            console.log("Tried to respond to the emoji, failed for unknown reason.");
+        }
+    }
+  })
 
 
 bot.login(TOKEN);

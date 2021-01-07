@@ -13,10 +13,14 @@ class cat extends commando.Command {
     }
 
     async run(message, args) {
-        message.delete();
-        message.channel.send(message.content.slice(5, message.content.length));
+        try {
+            message.delete();
+            message.channel.send(message.content.slice(5, message.content.length));
         }
-
+        catch {
+            message.reply("An error occured, probably due to network issues. Contact anonfoxer#8098.");
+        }
+    }
 }
 
 module.exports = cat

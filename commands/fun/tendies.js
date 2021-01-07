@@ -13,9 +13,14 @@ class tendies extends commando.Command {
     }
 
     async run(message, args) {
-        message.delete();
-        message.channel.sendMessage('', {files: ["./images/tendies.png"]});
+        try {
+            message.delete();
+            message.channel.sendMessage('', {files: ["./images/tendies.png"]});
         }
+        catch {
+            message.reply("Failed to send image, probably due to lack of permissions.");
+        }
+    }
 
 }
 

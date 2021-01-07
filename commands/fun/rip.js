@@ -14,10 +14,14 @@ class rip extends commando.Command {
 
     async run(message, args) {
         var target = message.author();
-        target.kick();
-        message.channel.send(":question: " + target.memberName + " just kicked themselves from the server!....rip....")
+        try {
+            target.kick();
+        message.channel.send(":question: " + target.memberName + " just kicked themselves from the server!....rip....");
+    }
+        catch {
+            message.reply("Ran into an error!");
         }
-
+    }
 }
 
 module.exports = rip

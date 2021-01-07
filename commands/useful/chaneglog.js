@@ -13,7 +13,7 @@ class changeLog extends commando.Command {
     }
 
     async run(message, args) {
-        message.channel.send(":gear: Version 2.0.0 Changelog\n - Rewrote lots of code across all parts of the bot.\n - Removed the barely functioning logging system.\n - Removed mute & unmute\n - Added &info, &kick, &cat, &rip, and &ban\n- Removed setup commands!");
+        message.channel.send(":gear: Version 2.1.0 Changelog\n - Added some funny stuff in the entry point file (flume.js)\n - General bug fixes");
         }
 
 }

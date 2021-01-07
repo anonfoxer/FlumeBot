@@ -4,14 +4,11 @@ Also an excuse for me to learn how to use git right.
 Now running 24/7!
 
 
-# Version 2.0.0
-To celebrate me getting this stupid thing on an RPi, I've changed some things and we are now on what I think is safe to say Flume 2.0!
+# Version 2.1.0
 Changes:
-- Removed garbage code/failed projects from the entry. This includes logging and raidmode functions.
-- Added change notes to the Entry Point.
-- Added &cat, &kick, &ban, &rip
-- Removed Setup group
-- Removed &mute, &unmute.
+- Added some BS to the entry for some stupid jokes
+- Cleaned up old/dead end code, fixed some bugs.
+- Added try..catch statements for all commands.
 
 
 # Node Setup

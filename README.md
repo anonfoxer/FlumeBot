@@ -4,11 +4,9 @@ Also an excuse for me to learn how to use git right.
 Now running 24/7!
 
 
-# Version 2.1.0
+# Version 2.1.1
 Changes:
-- Added some BS to the entry for some stupid jokes
-- Cleaned up old/dead end code, fixed some bugs.
-- Added try..catch statements for all commands.
+- Fixed a minor bug that prevented tendies from working
 
 
 # Node Setup

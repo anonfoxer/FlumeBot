@@ -9,11 +9,10 @@ const bot = new commando.Client({
     disableEveryone: true
 });
 
-/* Flume 2.1.0 - What's new? 
-- Added some BS to the entry for some stupid jokes
-- Cleaned up code, fixed some bugs.
-- Added try..catch statements for all commands.
+/* Flume 2.1.1 - What's new? 
+ - Fixed bug that prevented &tendies from working
 */
+
 
 bot.on('ready', ( ) => {
     bot.user.setActivity('&help')

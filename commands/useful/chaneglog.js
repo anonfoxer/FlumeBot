@@ -1,6 +1,4 @@
 const commando = require('discord.js-commando');
-//const guild = message.guild; //define the guild
-//const loggify = guild.channels.find(channel => channel.name === "flume-logs");
 
 class changeLog extends commando.Command {
     constructor(client) {
@@ -13,7 +11,7 @@ class changeLog extends commando.Command {
     }
 
     async run(message, args) {
-        message.channel.send(":gear: Version 2.1.0 Changelog\n - Added some funny stuff in the entry point file (flume.js)\n - General bug fixes");
+        message.channel.send(":gear: Version 2.1.1 Changelog\n - Fixed a bug that prevented the tendies command from working correctly");
         }
 
 }

@@ -12,7 +12,7 @@ class tendies extends commando.Command {
 
     async run(message, args) {
             message.delete();
-            message.channel.sendMessage('', {files: ["./images/tendies.png"]});
+            message.channel.send('', {files: ["./images/tendies.png"]});
     }
 
 }

@@ -4,9 +4,10 @@ Also an excuse for me to learn how to use git right.
 Now running 24/7!
 
 
-# Version 2.1.1
+# Version 2.1.2
 Changes:
 - Fixed a minor bug that prevented tendies from working
+- Added Version to "boot" sequence and status
 
 
 # Node Setup

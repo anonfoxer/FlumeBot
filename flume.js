@@ -9,15 +9,15 @@ const bot = new commando.Client({
     disableEveryone: true
 });
 
-/* Flume 2.1.2 - What's new? 
- - Fixed bug that prevented &tendies from working
-  - Added Version to "boot" sequence and status
+/* Flume 2.2.0 - What's new? 
+- Added new command group "copypasta"
+- Added new commnds under "useful": whois and serverinfo
+- Changed the requirements in &info as channel perms are no longer needed
 */
 
-
 bot.on('ready', ( ) => {
-    bot.user.setActivity('&help | v2.1.2')
-    console.log("FlumeBot Online! v2.1.2");
+    bot.user.setActivity('&help | v2.2.0')
+    console.log("FlumeBot Online! v2.2.0");
     console.log("Use &help to get started!");
 })
 
@@ -33,6 +33,7 @@ function registerCommands() { //registers all commands. Not neccissarily reserve
     bot.registry.registerGroup('fun', 'Fun');
     bot.registry.registerGroup('useful', 'Useful');
     bot.registry.registerGroup('moderation', 'Moderation');
+    bot.registry.registerGroup('copypasta', 'Copypasta');
     bot.registry.registerDefaults(); //Registers default commands
     bot.registry.registerCommandsIn(__dirname + "/commands"); //commands found in <dicrec>\commands.
 }

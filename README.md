@@ -4,10 +4,11 @@ Also an excuse for me to learn how to use git right.
 Now running 24/7!
 
 
-# Version 2.1.2
+# Version 2.2.0
 Changes:
-- Fixed a minor bug that prevented tendies from working
-- Added Version to "boot" sequence and status
+- Added new command group "copypasta"
+- Added new commnds under "useful": whois and serverinfo
+- Changed the requirements in &info as channel perms are no longer needed
 
 
 # Node Setup

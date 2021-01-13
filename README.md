@@ -10,7 +10,7 @@ Changes:
 - Added more copypastas
 
 Currently known issues:
-- None
+- Some feilds in serverinfo do not work
 
 
 # Node Setup

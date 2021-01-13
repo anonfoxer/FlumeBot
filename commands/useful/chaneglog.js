@@ -11,7 +11,7 @@ class changeLog extends commando.Command {
     }
 
     async run(message, args) {
-        message.channel.send(":gear: Version 2.2.0 Changelog\n - Changed the requirements in &info as channel perms are no longer needed\n - Added new command group copypasta\n - Added new commnds under useful: whois and serverinfo");
+        message.channel.send(":gear: Version 2.2.2 Changelog\n - Fixed &impostor and &serverinfo (the lazy way)\n - Added more copypastas\n");
         }
 
 }

@@ -9,17 +9,17 @@ const bot = new commando.Client({
     disableEveryone: true
 });
 
-/* Flume 2.2.0 - What's new? 
-- Added new command group "copypasta"
-- Added new commnds under "useful": whois and serverinfo
-- Changed the requirements in &info as channel perms are no longer needed
+/* Flume 2.2.2 - What's new? 
+- Fixed &impostor and &serverinfo (the lazy way)
+- Added more copypastas
 */
 
 bot.on('ready', ( ) => {
-    bot.user.setActivity('&help | v2.2.0')
-    console.log("FlumeBot Online! v2.2.0");
+    bot.user.setActivity('&help | v2.2.2')
+    console.log("FlumeBot Online! v2.2.2");
     console.log("Use &help to get started!");
 })
+
 
 bot.on('guildMemberAdd', member => {
     console.log("User " + member.user.username + " Joined!"); //announce new member to the server.

@@ -4,10 +4,9 @@ Also an excuse for me to learn how to use git right.
 Now running 24/7!
 
 
-# Version 2.2.2
+# Version 2.2.3
 Changes: 
-- Fixed &impostor and &serverinfo (the lazy way)
-- Added more copypastas
+- Removed wakeup
 
 Currently known issues:
 - Some feilds in serverinfo do not work

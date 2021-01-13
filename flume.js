@@ -9,14 +9,13 @@ const bot = new commando.Client({
     disableEveryone: true
 });
 
-/* Flume 2.2.2 - What's new? 
-- Fixed &impostor and &serverinfo (the lazy way)
-- Added more copypastas
+/* Flume 2.2.3 - What's new? 
+- Removed &wakeup
 */
 
 bot.on('ready', ( ) => {
-    bot.user.setActivity('&help | v2.2.2')
-    console.log("FlumeBot Online! v2.2.2");
+    bot.user.setActivity('&help | v2.2.3')
+    console.log("FlumeBot Online! v2.2.3");
     console.log("Use &help to get started!");
 })
 

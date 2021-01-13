@@ -19,7 +19,7 @@ class eject extends commando.Command {
         
         .　　 。　　　　　 ඞ 。 . 　　 • 　　　　•
         
-        　　ﾟ　　 ` + scrubby + ` was not An Impostor.　 。　.
+        　　ﾟ　　 ` + scrubby.memberName + ` was not An Impostor.　 。　.
         
         　　'　　　 1 Impostor remains 　 　　。
         
@@ -27,7 +27,6 @@ class eject extends commando.Command {
         try {
             if(!scrubby) { //if they didnt mention throw err
                 message.channel.send('Error: Mention a user!');
-                break;
             }
             message.delete();
             message.channel.send(msg);

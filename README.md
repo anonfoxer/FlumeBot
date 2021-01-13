@@ -5,8 +5,12 @@ Now running 24/7!
 
 
 # Version 2.2.2
-Known issues:
-- Serverinfo and whois not working correctly
+Changes: 
+- Fixed &impostor and &serverinfo (the lazy way)
+- Added more copypastas
+
+Currently known issues:
+- None
 
 
 # Node Setup

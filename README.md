@@ -21,9 +21,7 @@ Currently known issues:
 # To Do List
 - More fun stupid shit
 - More weird hacky code
-- In joke message monitoring
 - Voice Channel Control
-- General code optimization and cleanup.
 
 # Add Bot to a server
 [Invite Link](https://discordapp.com/oauth2/authorize?client_id=662760640242384904&scope=bot&permissions=2146958591)

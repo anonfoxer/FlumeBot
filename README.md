@@ -4,11 +4,10 @@ Also an excuse for me to learn how to use git right.
 Now running 24/7!
 
 
-# Version 2.2.0
+# Version 2.2.2
 Changes:
-- Added new command group "copypasta"
-- Added new commnds under "useful": whois and serverinfo
-- Changed the requirements in &info as channel perms are no longer needed
+- Fixed &impostor and &serverinfo (the lazy way)
+- Added more copypastas
 
 
 # Node Setup

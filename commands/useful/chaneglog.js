@@ -11,7 +11,7 @@ class changeLog extends commando.Command {
     }
 
     async run(message, args) {
-        message.channel.send(":gear: Version 2.2.2 Changelog\n - Fixed &impostor and &serverinfo (the lazy way)\n - Added more copypastas\n");
+        message.channel.send(":gear: Version 2.2.3 Changelog\n - Removed wakeup");
         }
 
 }

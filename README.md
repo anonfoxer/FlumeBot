@@ -1,7 +1,10 @@
 # FlumeBot
 My first properly done public discord bot
 Also an excuse for me to learn how to use git right.
+
 Now running 24/7!
+
+[Website](https://sites.google.com/view/flumebot)
 
 
 # Version 2.2.3

@@ -9,13 +9,17 @@ const bot = new commando.Client({
     disableEveryone: true
 });
 
-/* Flume 2.2.3 - What's new? 
-- Removed &wakeup
+/* Flume 2.2.5 - What's new?
+- Added &suggest
+- Added &cupid
+- Added nice emojis to everything
+- Fixed broken fields in &serverinfo
+- skipped some in dev builds
 */
 
 bot.on('ready', ( ) => {
-    bot.user.setActivity('&help | v2.2.3')
-    console.log("FlumeBot Online! v2.2.3");
+    bot.user.setActivity('&help | v2.2.5 | user suggestions since 1823');
+    console.log("FlumeBot Online! v2.2.5");
     console.log("Use &help to get started!");
 })
 

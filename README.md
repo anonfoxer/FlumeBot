@@ -7,12 +7,16 @@ Now running 24/7!
 [Website](https://sites.google.com/view/flumebot)
 
 
-# Version 2.2.3
+# Version 2.2.5
 Changes: 
-- Removed wakeup
+- Added &suggest
+- Added &cupid
+- Added nice emojis to everything
+- Fixed broken fields in &serverinfo
+- Skipped some indev builds.
 
 Currently known issues:
-- Some feilds in serverinfo do not work
+- None
 
 
 # Node Setup

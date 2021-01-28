@@ -11,7 +11,7 @@ class changeLog extends commando.Command {
     }
 
     async run(message, args) {
-        message.channel.send(":gear: Version 2.2.3 Changelog\n - Removed wakeup");
+        message.channel.send(":gear: Version 2.2.5 Changelog\n - Fixed &serverinfo\n - Added &cupid and &suggest\n - Added nice emojis to everything");
         }
 
 }

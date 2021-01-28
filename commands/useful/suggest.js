@@ -11,7 +11,7 @@ class suggestIo extends commando.Command {
     }
 
     async run(message, args) {
-        message.channel.send(":notebook: Please send your suggestions to: https://forms.gle/Sn4xKfrM7PrSqPpQ6");
+        message.channel.send(":notebook: Please send your suggestions to: " + URL);
         }
 
 }

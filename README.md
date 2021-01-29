@@ -7,13 +7,11 @@ Now running 24/7!
 [Website](https://sites.google.com/view/flumebot)
 
 
-# Version 2.2.5
+# Version 2.3.0
 Changes: 
-- Added &suggest
-- Added &cupid
-- Added nice emojis to everything
-- Fixed broken fields in &serverinfo
-- Skipped some indev builds.
+ - Changed class names for certian commands, surprised it worked at all without me doing this.
+ - added &based, &dogwater, and &cringe (thanks to FaunaBoops for the suggestion of the last one.)
+ - Added command group "actions" as well as some starter commands for there. Sorry furbot.
 
 Currently known issues:
 - None

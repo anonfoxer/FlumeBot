@@ -9,17 +9,15 @@ const bot = new commando.Client({
     disableEveryone: true
 });
 
-/* Flume 2.2.5 - What's new?
-- Added &suggest
-- Added &cupid
-- Added nice emojis to everything
-- Fixed broken fields in &serverinfo
-- skipped some in dev builds
+/* Flume 2.3.0 - What's new?
+ - Changed class names for certian commands, surprised it worked at all without me doing this.
+ - added &based, &dogwater, and &cringe (thanks to FaunaBoops for the suggestion of the last one.)
+ - Added command group "actions" as well as some starter commands for there. Sorry furbot.
 */
 
 bot.on('ready', ( ) => {
-    bot.user.setActivity('&help | v2.2.5 | user suggestions since 1823');
-    console.log("FlumeBot Online! v2.2.5");
+    bot.user.setActivity('&help | v2.3.0 | dogwater n hugs');
+    console.log("FlumeBot Online! v2.3.0 | dogwater n hugs");
     console.log("Use &help to get started!");
 })
 
@@ -37,9 +35,9 @@ function registerCommands() { //registers all commands. Not neccissarily reserve
     bot.registry.registerGroup('useful', 'Useful');
     bot.registry.registerGroup('moderation', 'Moderation');
     bot.registry.registerGroup('copypasta', 'Copypasta');
+    bot.registry.registerGroup('actions', 'Actions');
     bot.registry.registerDefaults(); //Registers default commands
     bot.registry.registerCommandsIn(__dirname + "/commands"); //commands found in <dicrec>\commands.
-}
 
 /* Stupid fun bs */
 bot.on('message', (message) => { //whenever a message is sent

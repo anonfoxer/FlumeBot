@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const commando = require('discord.js-commando');
 
-class cat extends commando.Command {
+class cupid extends commando.Command {
     constructor(client) {
         super(client, {
             name: 'cupid',
@@ -42,4 +42,4 @@ class cat extends commando.Command {
     }
 }
 
-module.exports = cat
+module.exports = cupid

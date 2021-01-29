@@ -19,7 +19,7 @@ class eject extends commando.Command {
         
         .　　 。　　　　　 ඞ 。 . 　　 • 　　　　•
         
-        　　ﾟ　　 ` + scrubby.memberName + ` was not An Impostor.　 。　.
+        　　ﾟ　　 ` + scrubby.displayName + ` was not An Impostor.　 。　.
         
         　　'　　　 1 Impostor remains 　 　　。
         

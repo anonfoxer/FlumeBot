@@ -1,6 +1,6 @@
 const commando = require('discord.js-commando');
 
-class redditors extends commando.Command {
+class eaCopypasta extends commando.Command {
     constructor(client) {
         super(client, {
             name: 'ea',
@@ -22,4 +22,4 @@ class redditors extends commando.Command {
     }
 }
 
-module.exports = redditors
+module.exports = eaCopypasta

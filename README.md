@@ -7,16 +7,13 @@ Now running 24/7!
 [Website](https://sites.google.com/view/flumebot)
 
 
-# Version 2.3.1
+# Version 2.3.2
 Changes: 
- - Changed class names for certian commands, surprised it worked at all without me doing this.
- - added &based, &dogwater, and &cringe (thanks to FaunaBoops for the suggestion of the last one.)
- - Added command group "actions" as well as some starter commands for there. Sorry furbot.
- - Addded &purge
+ - Fixed &purge, most action commands, and &cringe
+ - Updated &dogwater
 
 Currently known issues:
-- Purge currently doesnt work, looking into a temporary workaround.
-- Some of the action functions dont work at all, others throw undefined.
+- Some action commands may throw an empty message.
 
 
 

@@ -11,7 +11,7 @@ class whois extends commando.Command {
     }
 
     async run(message, args) {
-        try {
+        try {   
         var scrubby = message.mentions.members.first(); //mentioned user as arg
         if(!scrubby) { //if they didnt mention throw err
             message.channel.send('Error: Mention a user!');
@@ -19,9 +19,9 @@ class whois extends commando.Command {
         const create = scrubby.user.createdAt;
         const join = scrubby.joinedAt;
         const id = scrubby.id;
-        message.channel.send('They made their account: ' + create);
-        message.channel.send('They joined the server: ' + join);
-        message.channel.send('Their User ID: ' + id);
+        message.channel.send(':gear: They made their account: ' + create);
+        message.channel.send(':gear: They joined the server: ' + join);
+        message.channel.send(':gear: Their User ID: ' + id);
         }
         catch {
         message.channel.send("An error occured, probably due to network issues or lack of permissions.")

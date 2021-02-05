@@ -7,24 +7,25 @@ class huggity extends commando.Command {
             name: 'hug',
             group: 'actions',
             memberName: 'hug',
-            description: 'Hug someone!'
+            description: 'Hug someone!',
+            examples: ['&hug @flume']
         })
     }
 
     async run(message, args) {
-        var authr = message.author;
+        var authr = message.author.username;
         var scrubby = message.mentions.members.first(); //mentioned user as arg
         let responses = [
-            authr.displayName + " tackles " + scrubby.displayName + " and squeezes them tight!",
-            authr.displayName + " jumps on " + scrubby.displayName + " and boops them!",
-            authr.displayName + " gives " + scrubby.displayName + " a hug!!",
-            authr.displayName + " hugs " + scrubby.displayName + " tightly!",
-            authr.displayName + " cozily hugs " + scrubby.displayName + "!",
-            authr.displayName + " gives " + scrubby.displayName + " a ninja hug!"
+            authr + " tackles " + scrubby.displayName + " and squeezes them tight!",
+            authr + " jumps on " + scrubby.displayName + " and boops them!",
+            authr + " gives " + scrubby.displayName + " a hug!!",
+            authr + " hugs " + scrubby.displayName + " tightly!",
+            authr + " cozily hugs " + scrubby.displayName + "!",
+            authr + " gives " + scrubby.displayName + " a ninja hug!"
         ];
         try {
             if(!scrubby) { //if they didnt mention throw err
-                message.channel.send(authr.displayName + " gives themselves a hug!");
+                message.channel.send(authr + " gives themselves a hug!");
             }
             let result = responses[Math.floor(Math.random()*(responses.length)-1)]
             message.channel.send(result);

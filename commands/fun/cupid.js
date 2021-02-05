@@ -7,7 +7,8 @@ class cupid extends commando.Command {
             name: 'cupid',
             group: 'fun',
             memberName: 'cupid',
-            description: 'See how well you and someone might go together!'
+            description: 'See how well you and someone might go together!',
+            examples: ['&cupid @flume']
         })
     }
 

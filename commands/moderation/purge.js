@@ -22,23 +22,13 @@ class cleanup extends commando.Command {
     }
 
     async run(message, { num }) {
-        let channel = message.channel;
-
-        // fail if number of messages to purge is invalid
-        if (num <= 0) {
-            return message.channel.send('Purge number must be greater than 0');
-        }
-
-        // channel type must be text for .bulkDelete to be available
-        else if (channel.type === 'text') {
-            return channel.fetchMessages({limit: num})
-                .then(msgs => channel.bulkDelete(msgs))
-                .then(msgs => message.channel.send(`:tools: ${msgs.size} message(s)`))
-                .catch(console.error);
-        }
-        else {
-            return message.channel.reply('You can only use this in text channels!');
-        }
+        var purgelimit = Number(num) + 1;
+        message.channel.messages.fetch({ limit: purgelimit }).then(messages => {
+        message.channel.bulkDelete(messages);
+        message.reply("deleted " + messages.array().length + " messages, including command.");
+    }).catch(err => {
+        message.channel.send("Failed to delete messages. This may be caused by attempting to delete messages that are over 2 weeks old.");
+    });
     }
 };
 

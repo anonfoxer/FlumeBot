@@ -7,24 +7,25 @@ class booper extends commando.Command {
             name: 'boop',
             group: 'actions',
             memberName: 'boop',
-            description: 'Boop someone!'
+            description: 'Boop someone!',
+            examples: ['&boop @flume']
         })
     }
 
     async run(message, args) {
-        var authr = message.author;
+        var authr = message.author.username;
         var scrubby = message.mentions.members.first(); //mentioned user as arg
         let responses = [
-            authr.displayName + " runs up to " + scrubby.displayName + " and taps them on the nose!",
-            authr.displayName + " jumps on " + scrubby.displayName + " and boops them!",
-            authr.displayName + " gives " + scrubby.displayName + " a quick boop!",
-            authr.displayName + " boops " + scrubby.displayName + "!",
-            authr.displayName + " leaps acros the room to " + scrubby.displayName + " and lets loose a barrage of boops!",
-            authr.displayName + " gives " + scrubby.displayName + " a ninja boop!"
+            authr + " runs up to " + scrubby.displayName + " and taps them on the nose!",
+            authr + " jumps on " + scrubby.displayName + " and boops them!",
+            authr + " gives " + scrubby.displayName + " a quick boop!",
+            authr + " boops " + scrubby.displayName + "!",
+            authr + " leaps acros the room to " + scrubby.displayName + " and lets loose a barrage of boops!",
+            authr + " gives " + scrubby.displayName + " a ninja boop!"
         ];
         try {
             if(!scrubby) { //if they didnt mention throw err
-                message.channel.send(authr.displayName + " stands there and boops themselves?");
+                message.channel.send(authr + " stands there and boops themselves?");
             }
             let result = responses[Math.floor(Math.random()*(responses.length)-1)]
             message.channel.send(result);

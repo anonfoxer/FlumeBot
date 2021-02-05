@@ -6,7 +6,8 @@ class cat extends commando.Command {
             name: 'cat',
             group: 'fun',
             memberName: 'cat',
-            description: 'Repeats what you tell it to!'
+            description: 'Repeats what you tell it to!',
+            examples: ['&cat Flume is a dumb bot']
         })
     }
 

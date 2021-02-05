@@ -7,7 +7,8 @@ class eBall extends commando.Command {
             name: '8ball',
             group: 'fun',
             memberName: '8ball',
-            description: 'Get a fortune from the beyond!'
+            description: 'Get a fortune from the beyond!',
+            examples: ['&8ball Am I cool']
         })
     }
 

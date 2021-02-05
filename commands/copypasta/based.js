@@ -22,4 +22,4 @@ class basedCringe extends commando.Command {
     }
 }
 
-module.exports = redditors
+module.exports = basedCringe

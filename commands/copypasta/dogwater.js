@@ -11,7 +11,7 @@ class freeSoFree extends commando.Command {
     }
 
     async run(message, args) {  
-        var msg = "Youre literally free, boxed you, dogwater, 0 earns, 0 PR, you have no earnings, no wage earning, youre free, literally so free, freer than a free sample at costco, youre dogwater, literally so dog, these kids are so free, halotimmy, shut the fuck up, and quit crying, shouldnt you be playing roblox, you 0 earn 0 awareness walking piece of shit, obviously you cant win a game, maybe you should be watching bob the builder, to work on your mechanics, dogshit, youre lost like a console player trying to play n1.";
+        var msg = "Kid behind you, Helen Keller, is that you, you're literally dogshit, look at you, packed out like your mom last night, you're literally free, so free, kids on mcdonalds wifi, look at this kid, he has no earnings, literally no pr, he's dogshit, a walking shitter, kid your iq's lower than an e-girl, go make me a sandwich, you have no talent, god this kid hes so lost, more lost than helen keller looking for her glasses, literally free, so free, *doGSHIT, SHUT THE FUCK UP, KID, YOU HAVE NO EARNINGS,* you play on a radio, you're literally free, i packed you out, kids are lost, so braindead, literally dogwater, dollar tree pc, you're dogshit, kids are free, behind you, your dad's never coming home, you're literally dogshit, look at you, literally *free*, so free, you have to play with TV sound, you're literally ass, my god, kid looks free, 0 earnings, 0 pr, 0 iq, he's literally dogshit, oh my god, say hi to jesus for me, you're literally ass";
         try {
             message.delete();
             message.channel.send(msg);

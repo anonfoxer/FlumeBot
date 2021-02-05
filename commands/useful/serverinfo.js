@@ -24,7 +24,7 @@ class serverInfo extends commando.Command {
         const url = guild.iconURL;
         const count = guild.memberCount;
 
-        var infoMessage = "Server Name: " + name + "\nServer Owner: " + owner + "\nServer Region: " + region + "\nServer Moderation Level: " + level + "\nDefault Role: " + defrole + "\nCreated at: " + time + "\nServer ID: " + id + "\nAFK Channel: " + afk + "\nServer Icon: " + url + "\nMember Count (Bot Inclusive): " + count;
+        var infoMessage = ":gear: Server Name: " + name + "\n:gear: Server Owner: " + owner + "\n:gear: Server Region: " + region + "\n:gear: Server Moderation Level: " + level + "\n:gear: Default Role: " + defrole + "\n:gear: Created at: " + time + "\n:gear: Server ID: " + id + "\n:gear: AFK Channel: " + afk + "\n:gear: Server Icon: " + url.iconURL + "\n:gear: Member Count (Bot Inclusive): " + count;
         /* const guild = message.guild; //define the guild
         const name = guild.name;
         const owner = guild.owner;

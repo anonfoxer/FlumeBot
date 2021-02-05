@@ -9,15 +9,15 @@ const bot = new commando.Client({
     disableEveryone: true
 });
 
-/* Flume 2.3.1 - What's new?
- - Changed class names for certian commands, surprised it worked at all without me doing this.
- - added &based, &dogwater, &purge, and &cringe (thanks to FaunaBoops for the suggestion of the last one.)
- - Added command group "actions" as well as some starter commands for there. Sorry furbot.
+/* Flume 2.3.2 - What's new?
+ - Fixed &purge to be v12 stable
+ - Fixed most action commands. Some still throw empty messages. Dunno why.
+ - Updated &dogwater and &cringe
 */
 
 bot.on('ready', ( ) => {
-    bot.user.setActivity('&help | v2.3.1 | dogwater n hugs');
-    console.log("FlumeBot Online! v2.3.1 | dogwater n hugs");
+    bot.user.setActivity('&help | v2.3.2 | dogwater n bugs');
+    console.log("FlumeBot Online! v2.3.2 | dogwater n bugs");
     console.log("Use &help to get started!");
 })
 

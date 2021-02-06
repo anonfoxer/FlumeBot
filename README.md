@@ -7,10 +7,9 @@ Now running 24/7!
 [Website](https://sites.google.com/view/flumebot)
 
 
-# Version 2.3.2
+# Version 2.4.0
 Changes: 
- - Fixed &purge, most action commands, and &cringe
- - Updated &dogwater
+- Added aminal command group, out of fitting a request for Turtl.
 
 Currently known issues:
 - Some action commands may throw an empty message.
@@ -19,8 +18,10 @@ Currently known issues:
 
 # Node Setup
 - npm init
-- npm install discord.js --save
-- npm install --save https://github.com/discordjs/Commando.git
+- npm i --save discord.js
+- npm i --save https://github.com/discordjs/Commando.git
+- npm i --save pixabay-api
+
 
 # To Do List
 - More fun stupid shit

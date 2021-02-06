@@ -11,7 +11,7 @@ class changeLog extends commando.Command {
     }
 
     async run(message, args) {
-        message.channel.send(":gear: Version 2.3.2 Changelog\n - Fixed purge, cringe, and all action commands\n - Updated dogwater");
+        message.channel.send(":gear: Version 2.4.0 Changelog\n - Added aminal command group, out of fitting a request for Turtl.");
         }
 
 }

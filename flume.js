@@ -9,18 +9,15 @@ const bot = new commando.Client({
     disableEveryone: true
 });
 
-/* Flume 2.3.2 - What's new?
- - Fixed &purge to be v12 stable
- - Fixed most action commands. Some still throw empty messages. Dunno why.
- - Updated &dogwater and &cringe
+/* Flume 2.4.0 - What's new?
+ - Added aminal command group, out of fitting a request for Turtl.
 */
 
 bot.on('ready', ( ) => {
-    bot.user.setActivity('&help | v2.3.2 | dogwater n bugs');
-    console.log("FlumeBot Online! v2.3.2 | dogwater n bugs");
+    bot.user.setActivity('&help | v2.4.0 | aminals');
+    console.log("FlumeBot Online! v2.4.0 | aminals");
     console.log("Use &help to get started!");
 })
-
 
 bot.on('guildMemberAdd', member => {
     console.log("User " + member.user.username + " Joined!"); //announce new member to the server.
@@ -35,10 +32,11 @@ function registerCommands() { //registers all commands. Not neccissarily reserve
     bot.registry.registerGroup('useful', 'Useful');
     bot.registry.registerGroup('moderation', 'Moderation');
     bot.registry.registerGroup('copypasta', 'Copypasta');
+    bot.registry.registerGroup('aminals', 'Aminals');
     bot.registry.registerGroup('actions', 'Actions');
     bot.registry.registerDefaults(); //Registers default commands
     bot.registry.registerCommandsIn(__dirname + "/commands"); //commands found in <dicrec>\commands.
-
+}
 /* Stupid fun bs */
 bot.on('message', (message) => { //whenever a message is sent
     if (message.content.includes(":envolping:")) //checking for an emoji used often. seriously just an in joke.

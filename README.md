@@ -13,7 +13,7 @@ Changes:
 
 Currently known issues:
 - Some action commands may throw an empty message.
-
+- pixabay-api is severely outdated with 2 possible vulnerabilities but is currently in use due to its compliance with v12
 
 
 # Node Setup

@@ -13,9 +13,10 @@ class cring extends commando.Command {
     }
 
     async run(message, args) {
+
         var scrubby = message.mentions.members.first(); //mentioned user as arg
         let responses = [
-            scrubby.displayName.displayName + " is super fucking cringe. Cringetopia. r/TikTokCringe. Reddit cringe. They're alllllll sorts of cringe. Actually dogwater.",
+            scrubby.displayName + " is super fucking cringe. Cringetopia. r/TikTokCringe. Reddit cringe. They're alllllll sorts of cringe. Actually dogwater.",
             scrubby.displayName + " is pretty damn cringe. Wouldn't wanna hang out with them in public. Yeah, theyre so cringe they think its funny to call other people cringy. Thats pretty cringe.",
             scrubby.displayName + " is cringy. Cringy enough that you dont wanna always be seen with them.",
             scrubby.displayName + " isnt *that* cringy, but I would watch my back.",

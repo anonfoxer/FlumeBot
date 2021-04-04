@@ -13,8 +13,8 @@ Changes:
 
 Currently known issues:
 - Some action commands may throw an empty message.
-- pixabay-api is severely outdated with 2 possible vulnerabilities but is currently in use due to its compliance with v12
-
+- pixabay-api is severely outdated with 2 possible vulnerabilities but is currently in use due to its compliance with v12. Any suggestions to improve this with an easy to use API would be greatly appreciated.
+- 
 
 # Node Setup
 - npm init

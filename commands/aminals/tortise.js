@@ -1,7 +1,7 @@
 const commando = require('discord.js-commando');
 const Discord = require('discord.js'); //create client
 const pixabay = require("pixabay-api");
-const pixakey = "20172613-dcbb496c2037665ce6f5a46b1";
+const pixakey = "null";
 
 class tortIs extends commando.Command {
     constructor(client) {

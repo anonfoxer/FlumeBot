@@ -30,8 +30,8 @@ class booper extends commando.Command {
             let result = responses[Math.floor(Math.random()*(responses.length)-1)]
             message.channel.send(result);
         }
-        catch {
-            message.reply("An error occured, probably due to network issues. Contact anonfoxer#8098.");
+        catch(err) {
+            message.reply("An error occured, contact anonfoxer#8098. Error details: " + err);
         }
     }
 }

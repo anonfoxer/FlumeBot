@@ -7,11 +7,10 @@ Now running 24/7!
 [Website](https://sites.google.com/view/flumebot)
 
 
-# Version 2.4.1
+# Version 2.4.3
 Changes: 
-- Added &cuddlefish
-- Added catch(err) exceptions for most commands when applicable.
-- Correctly spelled tortoise
+- CORRECTLY SPELLED ***CUTTLEFISH***
+- Removed the anti pog routine temporarily due to lack of processing power.
 
 Currently known issues:
 - Some action commands may throw an empty message.

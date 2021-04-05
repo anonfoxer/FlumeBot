@@ -9,13 +9,15 @@ const bot = new commando.Client({
     disableEveryone: true
 });
 
-/* Flume 2.4.0 - What's new?
- - Added aminal command group, out of fitting a request for Turtl.
+/* Flume 2.4.1 - What's new?
+ - Correctly spelled tortoise.
+ - Added (err) passes to all catch statements where applicable. 
+ - Added &cuddlefish
 */
 
 bot.on('ready', ( ) => {
-    bot.user.setActivity('&help | v2.4.0 | aminals');
-    console.log("FlumeBot Online! v2.4.0 | aminals");
+    bot.user.setActivity('&help | v2.4.1 | spelling is hard');
+    console.log("FlumeBot Online! v2.4.1 | spelling is hard");
     console.log("Use &help to get started!");
 })
 

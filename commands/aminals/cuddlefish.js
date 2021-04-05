@@ -6,18 +6,18 @@ const pixakey = "null";
 class cuddleFish extends commando.Command {
     constructor(client) {
         super(client, {
-            name: 'cuttllefish',
+            name: 'cuttlefish',
             group: 'aminals',
-            memberName: 'cuttllefish',
-            description: 'Gets a pic of a cuttllefish'
+            memberName: 'cuttlefish',
+            description: 'Gets a pic of a cuttlefish'
         })
     }
 
     async run(message, {title}) {
         try {
-            var r = await pixabay.searchImages(pixakey, 'cuttllefish')
+            var r = await pixabay.searchImages(pixakey, 'cuttlefish')
             message.reply(new Discord.MessageEmbed()
-                .setTitle("Random cuttllefish")
+                .setTitle("Random cuttlefish")
                 .setImage(r.hits[Math.floor(Math.random() * r.hits.length)].largeImageURL))
         }
         catch(err) {

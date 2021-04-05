@@ -7,9 +7,11 @@ Now running 24/7!
 [Website](https://sites.google.com/view/flumebot)
 
 
-# Version 2.4.0
+# Version 2.4.1
 Changes: 
-- Added aminal command group, out of fitting a request for Turtl.
+- Added &cuddlefish
+- Added catch(err) exceptions for most commands when applicable.
+- Correctly spelled tortoise
 
 Currently known issues:
 - Some action commands may throw an empty message.

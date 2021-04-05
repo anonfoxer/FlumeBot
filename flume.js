@@ -9,15 +9,14 @@ const bot = new commando.Client({
     disableEveryone: true
 });
 
-/* Flume 2.4.1 - What's new?
- - Correctly spelled tortoise.
- - Added (err) passes to all catch statements where applicable. 
- - Added &cuddlefish
+/* Flume 2.4.3 - What's new?
+ - Fixed spelling for CUTTLE FISH.
+ - Removed the anti pog routine as it slows down the current hardware too much. Will be renabled when i have a better server for Flume.
 */
 
 bot.on('ready', ( ) => {
-    bot.user.setActivity('&help | v2.4.1 | spelling is hard');
-    console.log("FlumeBot Online! v2.4.1 | spelling is hard");
+    bot.user.setActivity('&help | v2.4.3 | hardware\'s');
+    console.log("FlumeBot Online! v2.4.3 | hardware\'s");
     console.log("Use &help to get started!");
 })
 
@@ -49,7 +48,23 @@ bot.on('message', (message) => { //whenever a message is sent
         catch {
             console.log("Tried to respond to the emoji, failed for unknown reason.");
         }
-    }
+    } // --- Anti Pog Routine added in 2.4.2. Disabled in 2.4.3 due to lack of processing power.
+    /* if (message.content.match(badWord)) {
+        try {
+            var flop = Math.round(Math.random());
+            if (flop == 1) {
+                message.delete();
+                message.reply("No p*g for you.")
+            }
+            else {
+                return;
+            }
+        }
+        catch(err) {
+            console.log("Failed to sanitize pog. Err: " + err);
+            message.channel.send("Failed to sanitize pog. Err: " + err); 
+        }
+    } */
   })
 
 

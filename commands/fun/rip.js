@@ -15,9 +15,9 @@ class rip extends commando.Command {
         try {
             target.kick();
         message.channel.send(":question: " + target.memberName + " just kicked themselves from the server!....rip....");
-    }
-        catch {
-            message.reply("Ran into an error!");
+        }
+        catch(err) {
+            message.reply("An error occured, contact anonfoxer#8098. Error details: " + err);
         }
     }
 }

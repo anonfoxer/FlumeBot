@@ -16,8 +16,8 @@ class cat extends commando.Command {
             message.delete();
             message.channel.send(message.content.slice(5, message.content.length));
         }
-        catch {
-            message.reply("An error occured, probably due to network issues. Contact anonfoxer#8098.");
+        catch(err) {
+            message.reply("An error occured, contact anonfoxer#8098. Error details: " + err);
         }
     }
 }

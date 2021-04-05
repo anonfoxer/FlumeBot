@@ -11,7 +11,7 @@ class changeLog extends commando.Command {
     }
 
     async run(message, args) {
-        message.channel.send(":gear: Version 2.4.1 Changelog\n - Spelled **tortoise** correctly.\n- Added &cuddlefish\n - Added catch(err) throws to all catch statements where applicable to aid in debugging. If you expirience an error, please send it to the bot owner or open a pull request.");
+        message.channel.send(":gear: Version 2.4.3 Changelog\n - Fixed spelling for CUTTLE FISH.\n - Removed the anti pog routine as it slows down the current hardware too much. Will be renabled when i have a better server for Flume.");
         }
 
 }

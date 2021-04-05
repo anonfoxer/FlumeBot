@@ -23,8 +23,8 @@ class whois extends commando.Command {
         message.channel.send(':gear: They joined the server: ' + join);
         message.channel.send(':gear: Their User ID: ' + id);
         }
-        catch {
-        message.channel.send("An error occured, probably due to network issues or lack of permissions.")
+        catch(err) {
+            message.reply("An error occured, contact anonfoxer#8098. Error details: " + err);
         }
     }
 }

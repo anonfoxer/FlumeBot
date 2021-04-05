@@ -63,8 +63,8 @@ class serverInfo extends commando.Command {
         try {
             message.channel.send(infoMessage);
         }
-        catch {
-            message.reply("An error occured, probably due to network issues or lack of permissions.");
+        catch(err) {
+            message.reply("An error occured, contact anonfoxer#8098. Error details: " + err);
         }
     }
 }

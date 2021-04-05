@@ -1,23 +1,23 @@
 const commando = require('discord.js-commando');
 const Discord = require('discord.js'); //create client
 const pixabay = require("pixabay-api");
-const pixakey = "null";
+const pixakey = "20172613-dcbb496c2037665ce6f5a46b1";
 
 class cuddleFish extends commando.Command {
     constructor(client) {
         super(client, {
-            name: 'cuddlefish',
+            name: 'cuttllefish',
             group: 'aminals',
-            memberName: 'cuddlefish',
-            description: 'Gets a pic of a cuddlefish'
+            memberName: 'cuttllefish',
+            description: 'Gets a pic of a cuttllefish'
         })
     }
 
     async run(message, {title}) {
         try {
-            var r = await pixabay.searchImages(pixakey, 'cuddlefish')
+            var r = await pixabay.searchImages(pixakey, 'cuttllefish')
             message.reply(new Discord.MessageEmbed()
-                .setTitle("Random cuddlefish")
+                .setTitle("Random cuttllefish")
                 .setImage(r.hits[Math.floor(Math.random() * r.hits.length)].largeImageURL))
         }
         catch(err) {

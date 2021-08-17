@@ -11,7 +11,7 @@ class changeLog extends commando.Command {
     }
 
     async run(message, args) {
-        message.channel.send(":gear: Version 2.4.3 Changelog\n - Fixed spelling for CUTTLE FISH.\n - Removed the anti pog routine as it slows down the current hardware too much. Will be renabled when i have a better server for Flume.");
+        message.channel.send(":gear: Version 2.5.0 Changelog\n - Added &shark\n - Added &hamster\n - Added Mordhau commands category\n - Added &badbuild");
         }
 
 }

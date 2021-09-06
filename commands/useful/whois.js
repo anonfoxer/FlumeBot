@@ -1,4 +1,5 @@
 const commando = require('discord.js-commando');
+const Discord = require('discord.js'); //create client
 
 class whois extends commando.Command {
     constructor(client) {
@@ -19,10 +20,20 @@ class whois extends commando.Command {
         const create = scrubby.user.createdAt;
         const join = scrubby.joinedAt;
         const id = scrubby.id;
-        message.channel.send(':gear: They made their account: ' + create);
-        message.channel.send(':gear: They joined the server: ' + join);
-        message.channel.send(':gear: Their User ID: ' + id);
-        }
+
+        const whoIsEmbed = new Discord.MessageEmbed()
+            .setColor('#8336d6')
+            .setTitle('Who is')
+            .setURL('https://github.com/anonfoxer/FlumeBot')
+            .setAuthor('FlumeBot', 'https://i.imgur.com/agTGFwL.png', 'https://github.com/anonfoxer/FlumeBot')
+            .setDescription('Results of a whois search on ' + scrubby.displayName)
+            .addFields(
+                { name:'Account Created',value: create},
+                { name:'Server joined at',value: join},
+                { name:'UID',value: id},
+            )
+            message.channel.send(whoIsEmbed);
+    }
         catch(err) {
             message.reply("An error occured, contact anonfoxer#8098. Error details: " + err);
         }

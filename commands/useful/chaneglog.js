@@ -1,4 +1,5 @@
 const commando = require('discord.js-commando');
+const Discord = require('discord.js'); //create client
 
 class changeLog extends commando.Command {
     constructor(client) {
@@ -11,7 +12,20 @@ class changeLog extends commando.Command {
     }
 
     async run(message, args) {
-        message.channel.send(":gear: Version 2.5.0 Changelog\n - Added &shark\n - Added &hamster\n - Added Mordhau commands category\n - Added &badbuild");
+
+        const changelogEmbed = new Discord.MessageEmbed()
+            .setColor('#8336d6')
+            .setTitle('Changelog')
+            .setURL('https://github.com/anonfoxer/FlumeBot')
+            .setAuthor('FlumeBot', 'https://i.imgur.com/agTGFwL.png', 'https://github.com/anonfoxer/FlumeBot')
+            .setDescription('Changelog for v2.5.1')
+            .setThumbnail('https://i.imgur.com/VH3jv7d.jpg')
+            .addFields(
+                { name: 'Changes in v2.5.1', value: 'Removed tenacious and friendly from &badbuild\nStarted doing fancy new embeds for most important messages.\nAdded &haustrat\nRemoved broken message.author() calls from functions that used them to prevent errors with the new discord.js update.' },
+            )
+
+
+        message.channel.send(changelogEmbed);
         }
 
 }

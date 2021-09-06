@@ -5,13 +5,15 @@ Also an excuse for me to learn how to use git right.
 Now running 24/7!
 
 [Website](https://sites.google.com/view/flumebot)
+[Invite Link](https://discordapp.com/oauth2/authorize?client_id=662760640242384904&scope=bot&permissions=2146958591)
 
 
-# Version 2.5.0
+# Version 2.5.1
 Changes: 
-- Added &shark and &hamster
-- Added the Mordhau command category.
-- General performance optimizations.
+- Added embeds to messages where appropriate.
+- Added &haustrat
+- Removed tenacious and friendly perks from &badbuild
+- Removed broken message.author() calls to prevent errors with the new version of discord.js
 
 Currently known issues:
 - Some action commands may throw an empty message.

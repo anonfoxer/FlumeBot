@@ -12,17 +12,15 @@ const bot = new commando.Client({
     disableEveryone: true
 });
 
-/* Flume 2.5.0 - What's new?
- - Added &shark
- - Added &hamster
- - Added &badbuild + the Mordhau commands category
+/* Flume 2.5.1 - What's new?
+    - Added embeds to messages where appropriate.
+    - Added &haustrat
+    - Removed tenacious and friendly perks from &badbuild
+    - Removed broken message.author() calls to prevent errors with the new version of discord.js
 */
 
 bot.on('ready', ( ) => {
-    bot.user.setActivity('&help | v2.5.0 | build roulette');
-    //bot.user.setActivity('v2.5.0 indev');
-    console.log("FlumeBot Online! v2.5.0 | build roulette");
-    console.log("Use &help to get started!");
+    bot.user.setActivity('&help | v2.5.1 | Pretty');
 })
 
 bot.on('guildMemberAdd', member => {
@@ -44,35 +42,5 @@ function registerCommands() { //registers all commands.
     bot.registry.registerDefaults(); //Registers default commands
     bot.registry.registerCommandsIn(__dirname + "/commands"); //commands found in <dicrec>\commands.
 }
-
-/* Stupid fun bs */
-bot.on('message', (message) => { //whenever a message is sent
-    /*if (message.content.includes(":envolping:")) //checking for an emoji used often. seriously just an in joke.
-    { 
-        try {
-            message.channel.send("indubitably.");
-        }
-        catch {
-            console.log("Tried to respond to the emoji, failed for unknown reason.");
-        }
-    } */
-    /* if (message.content.match(badWord)) {
-        try {
-            var flop = Math.round(Math.random());
-            if (flop == 1) {
-                message.delete();
-                message.reply("No p*g for you.")
-            }
-            else {
-                return;
-            }
-        }
-        catch(err) {
-            console.log("Failed to sanitize pog. Err: " + err);
-            message.channel.send("Failed to sanitize pog. Err: " + err); 
-        }
-    } */
-  })
-
 
 bot.login('NULL');

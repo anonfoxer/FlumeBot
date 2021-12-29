@@ -12,20 +12,13 @@ const bot = new commando.Client({
     disableEveryone: true
 });
 
-/* Flume 2.5.1 - What's new?
-    - Added embeds to messages where appropriate.
-    - Added &haustrat
-    - Removed tenacious and friendly perks from &badbuild
-    - Removed broken message.author() calls to prevent errors with the new version of discord.js
+/* Flume 2.5.1.2 - What's new?
+    - Changed up the &info command for 3.0 (2.5.1.1)
+    - Fixed a rare crash when a user joins a server.
 */
 
 bot.on('ready', ( ) => {
     bot.user.setActivity('&help | v2.5.1 | Pretty');
-})
-
-bot.on('guildMemberAdd', member => {
-    console.log("User " + member.user.username + " Joined!"); //announce new member to the server.
-    message.channel.sendMessage("Hello there, " + member.user.username, + "!");
 })
 
 /* allocate commands */

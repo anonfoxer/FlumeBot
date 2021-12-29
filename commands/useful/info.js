@@ -22,6 +22,7 @@ class inform extends commando.Command {
             .addFields(
                 { name: 'What is Flume?', value: 'Flume is a small Discord bot aimed at small servers with fun and moderation in mind.' },
                 { name: '\u200B', value: '\u200B' },
+                { name: 'Important Announcement', value: 'Flume is currently undergoing another rewrite for 3.0 to include supportfor slash commands though this update will not be pushed to the public bot until neccissarry.' },
                 { name: 'Made by', value: 'anonfoxer', inline: true },
                 { name: 'Permissions needed', value: 'Admin privs, manage roles, kick & ban, attatch files.', inline: true },
             )

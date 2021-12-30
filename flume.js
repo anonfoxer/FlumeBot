@@ -36,4 +36,22 @@ function registerCommands() { //registers all commands.
     bot.registry.registerCommandsIn(__dirname + "/commands"); //commands found in <dicrec>\commands.
 }
 
+//editing message responses
+let responses = [
+    "oh? did you fuck up? did you make an oopsie there? i saw that, fuck you.",
+    "lol, look at this orphan, they can't spell.",
+    "HURR DURR, I MADE A FUCKY WUCKY NOW I HAVE TO EDIT MY MESSAGE HURRRRRR",
+    "i saw that.",
+    "oh? you thought we wouldn't see that? fuck you.",
+    "stupid dumbass idiot, can't spekl...wait shit",
+    "made an oopsie there? don't worry, i won't tell anyone.",
+    "did that have a little boo boo?",
+    "try again lol"
+];
+
+bot.on('messageUpdate', ( message ) => { //whenever you make an edit to a message it will tease you.
+    let result = responses[Math.floor(Math.random()*(responses.length)-1)] //might cause a rare crash. oh well.
+    message.channel.send(result);
+})
+
 bot.login('NULL');

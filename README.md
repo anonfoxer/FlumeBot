@@ -15,7 +15,7 @@ Changes:
 - Added the ability for the bot to tease you for editing a message (thank you, DriftingNitro)
 - Fixed a rare crash from members joining a server while the bot is active.
 - Updated &info for 3.0 announcement
-- Added a new strat to &haustrat
+- Added new strats to &haustrat
 
 Currently known issues:
 - Some action commands may throw an empty message.

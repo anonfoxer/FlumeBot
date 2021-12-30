@@ -39,3 +39,17 @@ Pick one person on the enemy team, and avoid them at all costs. You cannot attac
 Everyone goes no armor quarterstaff + dodge.
 You're only allowed to attack people using turds.
 Everyone goes default knight and rushes the objectives.
+Megatryhard, 60 kills or you do 5 pushups.
+After each kill you have to run back to the closest objective and touch the flagpole.
+After every death, do a jumping jack. Every 5th death, do a burpee.
+You can only crab walk and use short spears and short swords
+Triple throwing knives + dodge.
+Triple throwing knives + tank.
+Triple Jav + tank.
+Set your FOV to 60, play in first person with your mouse DPI and sensitivity as high as they will go. Bonus points if you turn on mouse acceleration. 
+Turn your FOV down as low as it will go.
+Play with Cinematic camera on (m.cinematicCamera 1) and in first person.
+Limit your frames to 30FPS, and max out all your graphics settings.
+Play with Cinematic Camera on (m.cinematicCamera 1) and an FOV of 60.
+No chambers allowed.
+Play archer, you must only fight from the ground, and only move on horseback. no shooting on horseback.

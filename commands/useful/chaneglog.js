@@ -21,7 +21,7 @@ class changeLog extends commando.Command {
             .setDescription('Changelog for v2.5.2')
             .setThumbnail('https://i.imgur.com/VH3jv7d.jpg')
             .addFields(
-                { name: 'Changes in v2.5.2', value: 'Changed descriptions for Mordhau command embeds.\nAdded the ability for the bot to tease you for editing a message. (Thank you DriftingNitro)' },
+                { name: 'Changes in v2.5.2', value: 'Changed descriptions for Mordhau command embeds.\nAdded the ability for the bot to tease you for editing a message. (Thank you DriftingNitro)\nFixed a rare crash\nAdded a new strat to &haustrat' },
             )
 
 

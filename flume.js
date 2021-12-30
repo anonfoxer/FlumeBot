@@ -13,8 +13,11 @@ const bot = new commando.Client({
 });
 
 /* Flume 2.5.1.2 - What's new?
-    - Changed up the &info command for 3.0 (2.5.1.1)
-    - Fixed a rare crash when a user joins a server.
+- Changed descriptions for Mordhau command embeds.
+- Added the ability for the bot to tease you for editing a message (thank you, DriftingNitro)
+- Fixed a rare crash from members joining a server while the bot is active.
+- Updated &info for 3.0 announcement
+- Added new strats to &haustrat
 */
 
 bot.on('ready', ( ) => {

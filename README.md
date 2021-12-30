@@ -9,16 +9,18 @@ Now running 24/7!
 [Invite Link](https://discord.com/oauth2/authorize?client_id=662760640242384904&scope=bot&permissions=125958)
 
 
-# Version 2.5.1
+# Version 2.5.2
 Changes: 
-- Added embeds to messages where appropriate.
-- Added &haustrat
-- Removed tenacious and friendly perks from &badbuild
-- Removed broken message.author() calls to prevent errors with the new version of discord.js
+- Changed descriptions for Mordhau command embeds.
+- Added the ability for the bot to tease you for editing a message (thank you, DriftingNitro)
+- Fixed a rare crash from members joining a server while the bot is active.
+- Updated &info for 3.0 announcement
+- Added a new strat to &haustrat
 
 Currently known issues:
 - Some action commands may throw an empty message.
 - pixabay-api is severely outdated with 2 possible vulnerabilities but is currently in use due to its compliance with v12. Any suggestions to improve this with an easy to use API would be greatly appreciated.
+- The bot will trigger the edit tease on ANY message update, encluding some embeds.
 
 
 # Node Setup
@@ -26,6 +28,7 @@ Currently known issues:
 - npm i --save discord.js
 - npm i --save https://github.com/discordjs/Commando.git
 - npm i --save pixabay-api
+- node .
 
 
 # To Do List

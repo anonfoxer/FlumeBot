@@ -4,7 +4,7 @@ const commando = require('discord.js-commando');
 const bot = new commando.Client({
     commandPrefix: '&',
     
-    owner: "476423919893479434",
+    owner: "NULL",
 
     disableEveryone: true
 });

@@ -1,28 +1,29 @@
 const Discord = require('discord.js'); //create client
 const commando = require('discord.js-commando');
-const pixabay = require("pixabay-api");
-const pixakey = "NULL";
-//const badWord = /pog|Pog/g;
 
 const bot = new commando.Client({
     commandPrefix: '&',
     
-    owner: "NULL",
+    owner: "476423919893479434",
 
     disableEveryone: true
 });
 
-/* Flume 2.5.1.2 - What's new?
-- Changed descriptions for Mordhau command embeds.
-- Added the ability for the bot to tease you for editing a message (thank you, DriftingNitro)
-- Fixed a rare crash from members joining a server while the bot is active.
-- Updated &info for 3.0 announcement
-- Added new strats to &haustrat
+/* Flume 2.5.3.1 - What's new?
+    - Fixed empty message throws in &cupid, &cringe, all commands uing an array for a response function
+    - Added &lutehelp for use within The Bard's Guild <3
+    - Fixed *some* of the bugs with message edit responses being triggered by embeds.
 */
 
 bot.on('ready', ( ) => {
-    bot.user.setActivity('&help | v2.5.1 | Pretty');
+    bot.user.setActivity('&help | v2.5.3.1 | boo-womp');
+    //bot.user.setActivity('v2.5.3.1 indev, don\'t interact.');
+    console.log("FlumeBot Online! v2.5.3.1 | boo-womp");
+    console.log("Use &help to get started!");
+    //console.log("Currently in Dev mode.");
 })
+
+
 
 /* allocate commands */
 registerCommands();
@@ -32,7 +33,7 @@ function registerCommands() { //registers all commands.
     bot.registry.registerGroup('useful', 'Useful');
     bot.registry.registerGroup('moderation', 'Moderation');
     bot.registry.registerGroup('copypasta', 'Copypasta');
-    bot.registry.registerGroup('aminals', 'Aminals');
+//    bot.registry.registerGroup('aminals', 'Aminals'); nuetering this function in 2.5.3 for saftey. once a safe API is found, this will be re-enabled, hopefully.
     bot.registry.registerGroup('actions', 'Actions');
     bot.registry.registerGroup('mordhau', 'mordhau');
     bot.registry.registerDefaults(); //Registers default commands
@@ -40,7 +41,7 @@ function registerCommands() { //registers all commands.
 }
 
 //editing message responses
-let responses = [
+/* let responses = [
     "oh? did you fuck up? did you make an oopsie there? i saw that, fuck you.",
     "lol, look at this orphan, they can't spell.",
     "HURR DURR, I MADE A FUCKY WUCKY NOW I HAVE TO EDIT MY MESSAGE HURRRRRR",
@@ -49,12 +50,16 @@ let responses = [
     "stupid dumbass idiot, can't spekl...wait shit",
     "made an oopsie there? don't worry, i won't tell anyone.",
     "did that have a little boo boo?",
-    "try again lol"
-];
+    "try again lol",
+    "haha, u fucked up",
+    "oh? oh you screwed up? oh thats a shame. that's such a shame. dumbass.",
+    "woah there, thought we wouldn't see that?"
+];~
 
 bot.on('messageUpdate', ( message ) => { //whenever you make an edit to a message it will tease you.
-    let result = responses[Math.floor(Math.random()*(responses.length)-1)] //might cause a rare crash. oh well.
+    if(message.editedTimestamp = null || message.embeds > 0) return
+    let result = responses[Math.floor(Math.random()*(responses.length)-1)] 
     message.channel.send(result);
-})
+}) Removing this feature for the time being as its completely borked. */ 
 
-bot.login('NULL');
+bot.login('null');
